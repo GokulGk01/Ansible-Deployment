@@ -1,0 +1,16 @@
+project_name: "gk-ansible"
+ansible_user: "ubuntu"
+aws_output_format: "json"
+
+#Mysql
+mysql_port: 3306
+mysql_root_user: root
+mysql_root_passwd: "{{ vault_mysql_root_passwd }}"
+mysql_user: user
+mysql_user_passwd: "{{ vault_mysql_user_passwd }}"
+mysql_database: mysqluserdb
+
+#Redis
+redis_port: 6379
+redis_bind_interface: "{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }}" #Ip is taken from group in inventory
+redis_requirepass: "{{ vault_redis_requirepass }}"
