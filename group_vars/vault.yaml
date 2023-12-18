@@ -1,2 +1,0 @@
-vault_mysql_user_passwd: user123
-vault_redis_requirepass: "redis123"

@@ -1,4 +1,0 @@
-mysql_port: 3306
-mysql_root_user: root
-mysql_user: user
-mysql_database: mysqluserdb
